@@ -1,5 +1,5 @@
 <?php
-
+// titolo Esercizio: stampa la somma di n numeri:
 $Numero = (int)readline('Inserisci numero: ');
 
 for ($i= 0; $i<= $Numero; $i++){

@@ -1,5 +1,5 @@
 <?php
-
+// titolo esercizio: indovina il numero: 
 $continua = true;
 
 $NumeroVincente = random_int(0, 20);

@@ -1,9 +1,9 @@
 <?php
-
+ // titolo esercizio: Calcolatrice
 $PrimoNumero; 
 $SecondoNumero;
 $Continua = true;
-$Totale = 1;
+$Totale = 0;
 do {
     $Operazione = (string)readline('Inserisci tipo operazione:');
 
@@ -14,7 +14,7 @@ do {
         
         $Totale = ($PrimoNumero + $SecondoNumero);
         $Continua = false;
-
+        echo 'La somma è: ' .$Totale.PHP_EOL;
     }
     else if ($Operazione === 'differenza') {
        
@@ -23,14 +23,16 @@ do {
         
         $Totale = ($PrimoNumero - $SecondoNumero);
         $Continua = false;
-
+        echo 'La differenza è: ' .$Totale.PHP_EOL;
     }
     else if ($Operazione === 'moltiplicazione') {
         
         $PrimoNumero = (int)readline('Inserisci primo numero: ');
         $SecondoNumero = (int)readline('Inserisci secondo numero: ');
-        
-        $Totale = ($PrimoNumero * $SecondoNumero);
+        for($i = 0; $i<$SecondoNumero; $i++){
+            $Totale +=$PrimoNumero;
+        }
+        echo 'La moltiplicazione è: ' .$Totale.PHP_EOL;
         $Continua = false;
 
     }
@@ -38,8 +40,12 @@ do {
         
         $PrimoNumero = (int)readline('Inserisci primo numero: ');
         $SecondoNumero = (int)readline('Inserisci secondo numero: ');
-        
-        $Totale = ($PrimoNumero / $SecondoNumero);
+        while($PrimoNumero >= $SecondoNumero){
+        $Totale++;
+       $Resto = ($PrimoNumero -= $SecondoNumero);
+        }
+        echo 'La divisione è: ' .$Totale.PHP_EOL;
+        echo 'Il resto è: ' .$Resto.PHP_EOL;
         $Continua = false;
 
     }
@@ -60,6 +66,7 @@ do {
                 $Continua = false;
 
             }
+            echo 'Il fattoriale è: ' .$Totale.PHP_EOL;
         }
     }
     else {
@@ -69,6 +76,5 @@ do {
     }
 } while ($Continua);
 
-echo 'Il totale è: ' . $Totale;
 
 ?>
