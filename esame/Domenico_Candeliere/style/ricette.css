@@ -1,0 +1,52 @@
+.card{
+    background-color: brown;
+    padding: 10px;
+    margin: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 30px;
+}
+
+button{
+    cursor:pointer;
+}
+
+#form-container{
+    display: none;
+}
+
+form > label, input{
+    display: block;
+}
+
+.popup{
+	width: 200px;
+	background: #fefefe;
+	margin: 100px auto;
+	padding: 10px 20px;
+	position: relative;
+	color: lightgreen;   
+}
+
+.overlay{
+	position: fixed; /* schermo intero*/
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    height: 100vh;
+	background: skyblue; /* colore sfondo e opacità */
+	text-align: center;
+	
+}
+
+#close{
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	color: #fff;
+}
+
+#close:hover{
+	cursor: pointer;
+}
