@@ -1,3 +1,0 @@
-foreach($Numeri as $Valore ){ 
-    for($i=0; $i<=$Lunghezza; $i++){
-        $prodotto+=$Valore;

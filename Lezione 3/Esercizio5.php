@@ -1,5 +1,5 @@
 <?php
-
+// titolo esercizio: lista compleanni con stawmpa in JSON
 $persone = [];
 
 while (true) {

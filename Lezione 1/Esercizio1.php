@@ -3,7 +3,7 @@
 $PrimoNumero; 
 $SecondoNumero;
 $Continua = true;
-$Totale = 0;
+$Totale;
 do {
     $Operazione = (string)readline('Inserisci tipo operazione:');
 
